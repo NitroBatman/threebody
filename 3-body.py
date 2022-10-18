@@ -54,11 +54,12 @@ for i in range(len(x)-1):
             print(L[i][j])
             print(t)
 
-print minix , miniy
+print(minix , miniy)
 plt.scatter(minix,miniy, s = 1)
 CS = plt.contour(X, Y, Z, 20)
 plt.clabel(CS, inline = 1, fontsize = 10)
-plt.show()
+#plt.show()
+plt.savefig("3body.png")
 
 #plt.xlim(33,37) < v
 #plt.ylim(-2,2) <Drugo telo
